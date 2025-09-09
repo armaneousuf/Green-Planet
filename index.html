@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Green Earth</a>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Plant a Tree</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-secondary">Plant a Tree</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Plant a Tree, Grow a Future</h1>
+            <p>Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+            <button class="btn btn-primary">Get Involved</button>
+        </div>
+    </section>
+
+    <main class="container content-area">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul id="categories-list">
+            </ul>
+        </aside>
+
+        <section class="main-content">
+            <h2>Choose Your Trees</h2>
+            <div id="plant-grid" class="plant-grid">
+
+                <div class="spinner" id="loading-spinner"></div>
+            </div>
+        </section>
+
+        <aside class="cart-sidebar">
+            <h3>Your Cart</h3>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">৳0</span>
+            </div>
+        </aside>
+    </main>
+
+    <section class="about-campaign">
+        <div class="container about-box">
+            <img src="./assets/about.png" alt="A small plant growing">
+            <div class="about-text">
+                <h3>About the Campaign</h3>
+                <p>Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our
+                    start, we've planted over 500,000 trees worldwide. By joining our campaign, you help restore
+                    forests, create habitats for wildlife, and combat global warming.</p>
+                <ul>
+                    <li>Restoration of natural habitats</li>
+                    <li>Improvement of air quality</li>
+                    <li>Support for local communities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact">
+        <div class="container">
+            <h2>Our Impact</h2>
+            <div class="impact-stats">
+                <div class="stat">
+                    <h3>500K+</h3>
+                    <p>Trees Planted</p>
+                </div>
+                <div class="stat">
+                    <h3>120+</h3>
+                    <p>Communities Involved</p>
+                </div>
+                <div class="stat">
+                    <h3>30+</h3>
+                    <p>Countries Reached</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="donation-section">
+        <div class="container">
+            <h2>Plant a Tree Today</h2>
+            <form class="donation-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email Address">
+                <select>
+                    <option value="">Number of Trees</option>
+                    <option value="1">1 Tree</option>
+                    <option value="5">5 Trees</option>
+                    <option value="10">10 Trees</option>
+                    <option value="20">20 Trees</option>
+                    <option value="50">50 Trees</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Donate Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Green Earth. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal-btn">&times;</button>
+            <div id="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
