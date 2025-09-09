@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+::selection {
+    background-color: #2e7d32;
+    color: #fff;
+}
 :root {
   --primary-green: #2e7d32;
   --light-green: #e8f5e9;
@@ -100,6 +104,19 @@ body {
   flex-wrap: wrap; 
   gap: 30px;
   margin-top: 40px;
+}
+
+.hero-section {
+    padding: 45px;
+}
+
+.hero-section button {
+    margin-top: 20px;
+
+    &:hover {
+        background-color: #2e7d32;
+        color: #fff;
+    }
 }
 
 .sidebar,
@@ -322,7 +339,6 @@ body {
   color: #a0a0a0;
   text-align: center;
   padding: 20px 0;
-  border-top: 4px solid #00bfa5;
 }
 
 /* Modal Styles */
